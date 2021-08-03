@@ -1,9 +1,12 @@
 package main
 
 import solutions.BestTimeToBuyAndSellStock
+import solutions.MaximumSubArray
 
 fun main() {
-    val test = BestTimeToBuyAndSellStock()
+    val test = MaximumSubArray()
 
-    println(test.maxProfit(intArrayOf(7,1,5,3,6,4)))
+    println("FIRST______START")
+    println(test.maxSubArray(intArrayOf(-2,1,-3,4,-1,2,1,-5,4)))
+
 }
