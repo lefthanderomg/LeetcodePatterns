@@ -2,11 +2,11 @@ package main
 
 import solutions.BestTimeToBuyAndSellStock
 import solutions.MaximumSubArray
+import solutions.RangeSumQuery
 
 fun main() {
-    val test = MaximumSubArray()
+    val test = RangeSumQuery(intArrayOf(-2, 0, 3, -5, 2, -1))
 
-    println("FIRST______START")
-    println(test.maxSubArray(intArrayOf(-2,1,-3,4,-1,2,1,-5,4)))
+    println(test.sumRange(0,2))
 
 }
