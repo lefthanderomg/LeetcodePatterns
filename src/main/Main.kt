@@ -3,10 +3,11 @@ package main
 import solutions.BestTimeToBuyAndSellStock
 import solutions.MaximumSubArray
 import solutions.RangeSumQuery
+import solutions.СountBits
 
 fun main() {
-    val test = RangeSumQuery(intArrayOf(-2, 0, 3, -5, 2, -1))
+    val test = СountBits()
 
-    println(test.sumRange(0,2))
-
+    println(2.shr(1))
+    println(2 % 2)
 }
