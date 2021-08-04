@@ -1,13 +1,24 @@
 package main
 
-import solutions.BestTimeToBuyAndSellStock
-import solutions.MaximumSubArray
-import solutions.RangeSumQuery
-import solutions.СountBits
+import solutions.*
 
 fun main() {
-    val test = СountBits()
+    val test = HasCycle()
+    val cycler = HasCycle.ListNode(2)
+    val data = HasCycle.ListNode(3).apply {
+        next = cycler.apply {
+            next = HasCycle.ListNode(0).apply {
+                next = HasCycle.ListNode(-4).apply {
+                    next = cycler
+                }
+            }
+        }
+    }
+    print(test.hasCycle(data))
+    val kek = HasCycle.ListNode(2)
+    println(test.hasCycle(kek.apply {
+        next = HasCycle.ListNode(5)
+    }))
 
-    println(2.shr(1))
-    println(2 % 2)
+
 }
