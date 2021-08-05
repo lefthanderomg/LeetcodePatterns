@@ -3,22 +3,8 @@ package main
 import solutions.*
 
 fun main() {
-    val test = HasCycle()
-    val cycler = HasCycle.ListNode(2)
-    val data = HasCycle.ListNode(3).apply {
-        next = cycler.apply {
-            next = HasCycle.ListNode(0).apply {
-                next = HasCycle.ListNode(-4).apply {
-                    next = cycler
-                }
-            }
-        }
-    }
-    print(test.hasCycle(data))
-    val kek = HasCycle.ListNode(2)
-    println(test.hasCycle(kek.apply {
-        next = HasCycle.ListNode(5)
-    }))
+    val test = FindAllDuplicates()
 
+    println(test.findDuplicates(intArrayOf(4,3,2,7,8,2,3,1)))
 
 }
