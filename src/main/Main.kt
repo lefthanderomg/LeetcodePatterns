@@ -1,12 +1,13 @@
 package main
 
 import solutions.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 fun main() {
-    val test = ContainsDuplicate2()
+    val test = FindTheDuplicateNumber()
+    val data = intArrayOf(5,4,5,2,3,1)
 
-    println(test.slidingWindow(intArrayOf(1,2,3,1), 3))
-
-    println(test.slidingWindow(intArrayOf(1,2,3,1,2,3), 2))
+    println(test.findDuplicate(data))
 
 }
