@@ -1,5 +1,6 @@
 package solutions
 
+import main.model.ListNode
 import java.lang.Exception
 import kotlin.math.absoluteValue
 
@@ -34,9 +35,4 @@ class HasCycle {
 
         return true
     }
-
-
-    data class ListNode(var `val`: Int, var next: ListNode? = null)
-
-
 }

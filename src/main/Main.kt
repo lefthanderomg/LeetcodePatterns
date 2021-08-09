@@ -8,6 +8,6 @@ fun main() {
     val test = FindTheDuplicateNumber()
     val data = intArrayOf(5,4,5,2,3,1)
 
-    println(test.findDuplicate(data))
+    println(7/2)
 
 }
