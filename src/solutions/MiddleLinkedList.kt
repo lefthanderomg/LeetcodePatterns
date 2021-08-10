@@ -30,15 +30,11 @@ class MiddleLinkedList {
         var slow = head
         var fast = head
 
-        var shouldNext = true
-
-        while (shouldNext) {
+        while (fast?.next != null) {
             slow = slow?.next
-            fast = fast?.next?.next
-
-            shouldNext = fast?.next != null
+            fast = fast.next?.next
         }
 
-        return slow ?: head
+        return slow
     }
 }
