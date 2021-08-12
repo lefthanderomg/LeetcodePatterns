@@ -4,8 +4,8 @@ import main.model.toListNode
 import solutions.*
 
 fun main() {
-    val test = RemoveDuplicatesFromSortedList()
+    val test = MergeTwoSortedLists()
 
-    println(test.deleteDuplicates(intArrayOf(0,0,0,0).toListNode()))
+    println(test.mergeTwoLists(intArrayOf(1,2,3).toListNode(), intArrayOf(1,3,4).toListNode()))
 
 }
