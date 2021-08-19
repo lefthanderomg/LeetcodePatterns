@@ -4,8 +4,13 @@ import main.model.toListNode
 import solutions.*
 
 fun main() {
-    val test = MergeTwoSortedLists()
-
-    println(test.mergeTwoLists(intArrayOf(1,2,3).toListNode(), intArrayOf(1,3,4).toListNode()))
+val test = BinarySearch()
+    println(test.search(intArrayOf(-1,0,3,5,9,12), 2))
+    println(test.search(intArrayOf(-1,0,3,5,9,12), -1))
+    println(test.search(intArrayOf(-1,0,3,5,9,12), 40))
+    println(test.search(intArrayOf(-1,0,3,5,9,12), 12))
+    println(test.search(intArrayOf(-1,0,3,5,9,12), 0))
+    println(test.search(intArrayOf(-1,0,3,5,9,12), 9))
+    println(test.search(intArrayOf(5), 5))
 
 }
