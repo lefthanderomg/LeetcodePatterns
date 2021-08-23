@@ -3,23 +3,6 @@ package solutions
 import main.model.TreeNode
 import java.util.*
 
-fun main() {
-    val data = TreeNode(1).apply {
-        left = TreeNode(2).apply {
-            left = TreeNode(2)
-            right = TreeNode(2).apply {
-                left = TreeNode(100)
-            }
-        }
-        right = TreeNode(3).apply {
-            left = TreeNode(3)
-            right = TreeNode(3)
-        }
-    }
-
-    MinDepth().minDepth(data)
-}
-
 class MinDepth {
 
     fun minDepth(root: TreeNode?): Int {
