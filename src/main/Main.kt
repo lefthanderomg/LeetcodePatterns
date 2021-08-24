@@ -5,7 +5,7 @@ import main.model.toListNode
 import solutions.*
 
 fun main() {
-    val test = DiameterBinaryTree()
+    val test = MergeTrees()
 //    val data = TreeNode(1).apply {
 //        left = TreeNode(2).apply {
 //            left = TreeNode(4)
@@ -14,14 +14,14 @@ fun main() {
 //        right = TreeNode(3)
 //    }
 
-//    val data = TreeNode(2).apply {
-//        left = TreeNode(3).apply {
-//            left = TreeNode(1)
-//            right = null
-//        }
-//    }
+    val data1 = TreeNode(2).apply {
+        left = TreeNode(3).apply {
+            left = TreeNode(1)
+            right = null
+        }
+    }
 
-    val data = TreeNode(1).apply {
+    val data2 = TreeNode(1).apply {
         left = TreeNode(2).apply {
             left = TreeNode(3).apply {
                 left = TreeNode(5)
@@ -32,5 +32,5 @@ fun main() {
         }
     }
 
-    println(test.diameterOfBinaryTree(data))
+    println(test.mergeTrees(data1,data2 ))
 }
