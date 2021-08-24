@@ -5,7 +5,7 @@ import main.model.toListNode
 import solutions.*
 
 fun main() {
-    val test = MergeTrees()
+    val test = MaxDepth()
 //    val data = TreeNode(1).apply {
 //        left = TreeNode(2).apply {
 //            left = TreeNode(4)
@@ -32,5 +32,5 @@ fun main() {
         }
     }
 
-    println(test.mergeTrees(data1,data2 ))
+    println(test.maxDepth(data2 ))
 }
