@@ -17,4 +17,6 @@ class InvertBinaryTree {
 
         return node
     }
+
+    fun test(): IntArray =  intArrayOf(1,2)
 }
