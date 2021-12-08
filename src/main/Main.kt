@@ -1,8 +1,9 @@
 package main
 
+import solutions.MajorityElement
+
 fun main() {
-    println((1+2.236)/2)
-    println(1 + 4.0)
-    println(4.1 >= 4)
+   MajorityElement().majorityElement2(intArrayOf(2,2,1,1,1,2,2)).let(::println)
+   MajorityElement().majorityElement2(intArrayOf(3,3,4)).let(::println)
 
 }
