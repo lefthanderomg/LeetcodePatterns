@@ -1,4 +1,4 @@
-package book
+package book.chapter1.ProgrammingModel1_1
 
 class BinarySearch {
 
